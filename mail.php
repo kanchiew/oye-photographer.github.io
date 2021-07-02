@@ -5,12 +5,12 @@ if(!empty($_POST["send"])) {
     $subject = $_POST["subject"];
     $content = $_POST["content"];
  
-    $toEmail = "muknsit@gmail.com";
+    $toEmail = "kwanedkar@gmail.com";
     $mailHeaders = "From: " . $name . "<". $email .">\r\n";
     if(mail($toEmail, $subject, $content, $mailHeaders)) {
         $message = "Your contact information is received successfully.";
         $type = "success";
     }
 }
-require_once "contform.php";
+require_once "index.html";
 ?>
